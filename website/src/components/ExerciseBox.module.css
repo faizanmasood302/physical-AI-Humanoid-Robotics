@@ -1,0 +1,123 @@
+.exerciseBox {
+  border-left: 4px solid var(--ifm-color-education-secondary);
+  background-color: rgba(251, 188, 4, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  transition: all var(--ifm-transition-fast) ease;
+}
+
+.exerciseBox:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.exerciseHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.exerciseTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  color: var(--ifm-color-education-secondary);
+  font-size: 1.25rem;
+  font-weight: var(--ifm-heading-font-weight);
+}
+
+.exerciseIcon {
+  font-size: 1.5rem;
+}
+
+.exerciseMeta {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.difficultyTag {
+  background-color: var(--ifm-color-education-secondary);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.durationTag {
+  background-color: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.exerciseContent {
+  line-height: 1.6;
+}
+
+.exerciseContent h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-education-primary);
+}
+
+.exerciseContent ul,
+.exerciseContent ol {
+  padding-left: 1.5rem;
+}
+
+.exerciseContent li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .exerciseHeader {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .exerciseMeta {
+    justify-content: space-between;
+  }
+
+  .exerciseBox {
+    padding: 1rem;
+  }
+
+  .exerciseTitle {
+    font-size: 1.1rem;
+  }
+}
+
+/* Accessibility improvements */
+.exerciseBox:focus-within {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Dark mode support */
+html[data-theme='dark'] .exerciseBox {
+  background-color: rgba(253, 214, 98, 0.1);
+}
+
+html[data-theme='dark'] .difficultyTag {
+  color: var(--ifm-color-gray-900);
+}
+
+html[data-theme='dark'] .durationTag {
+  background-color: var(--ifm-color-emphasis-700);
+  color: var(--ifm-color-emphasis-200);
+}
