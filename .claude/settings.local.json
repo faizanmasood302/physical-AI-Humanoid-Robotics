@@ -1,0 +1,25 @@
+
+
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch --all --prune)",
+      "Bash(mkdir -p specs/1-textbook-physical-ai)",
+      "Bash(git checkout -b 1-textbook-physical-ai)",
+      "Bash(git checkout -b 2-docusaurus-textbook)",
+      "Bash(.specify/scripts/powershell/setup-plan.ps1 -Json)",
+      "Bash(.specify/scripts/powershell/check-prerequisites.ps1 -Json)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json:*)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -File \".specify/scripts/powershell/check-prerequisites.ps1\" -Json -RequireTasks -IncludeTasks)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npx create-docusaurus@latest website classic --typescript=false)",
+      "Bash(npx create-docusaurus@latest . classic)",
+      "Bash(npx create-docusaurus@latest website classic)",
+      "Bash(npm install @docusaurus/module-type-aliases @docusaurus/types remark-math rehype-katex katex)",
+      "Bash(npm install remark-math rehype-katex katex)",
+      "Bash(node validate-setup.js)"
+    ]
+  }
+}

@@ -15,10 +15,10 @@ const config: Config = {
   },
 
   // Set the production url of your site here
- url: 'https://faizanmasood302.github.io',
-baseUrl: '/physical-AI-Humanoid-Robotics/',
-organizationName: 'faizanmasood302',
-projectName: 'physical-AI-Humanoid-Robotics',
+    url: 'https://faizanmasood302.github.io',
+    baseUrl: '/physical-AI-Humanoid-Robotics',
+    organizationName: 'faizanmasood302',
+    projectName: 'physical-AI-Humanoid-Robotics',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
