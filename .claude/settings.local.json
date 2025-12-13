@@ -1,5 +1,3 @@
-
-
 {
   "permissions": {
     "allow": [
@@ -19,7 +17,8 @@
       "Bash(npx create-docusaurus@latest website classic)",
       "Bash(npm install @docusaurus/module-type-aliases @docusaurus/types remark-math rehype-katex katex)",
       "Bash(npm install remark-math rehype-katex katex)",
-      "Bash(node validate-setup.js)"
+      "Bash(node validate-setup.js)",
+      "Bash(git add .)"
     ]
   }
 }
