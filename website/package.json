@@ -8,6 +8,7 @@
     "build": "docusaurus build",
     "build:vercel": "cross-env USE_BASE_URL=/ DEPLOY_ENV=vercel docusaurus build",
     "build:github": "cross-env USE_BASE_URL=/physical-AI-Humanoid-Robotics docusaurus build",
+    "vercel-build": "cross-env USE_BASE_URL=/ DEPLOY_ENV=vercel docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
