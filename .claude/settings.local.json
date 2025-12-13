@@ -18,7 +18,11 @@
       "Bash(npm install @docusaurus/module-type-aliases @docusaurus/types remark-math rehype-katex katex)",
       "Bash(npm install remark-math rehype-katex katex)",
       "Bash(node validate-setup.js)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"Update Vercel config to properly detect Vercel environment and set correct base URL\")",
+      "Bash(git push origin 2-docusaurus-textbook)",
+      "Bash(cross-env USE_BASE_URL=/ DEPLOY_ENV=vercel npm run build)",
+      "Bash(npx cross-env USE_BASE_URL=/ DEPLOY_ENV=vercel npm run build)"
     ]
   }
 }
