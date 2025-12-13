@@ -6,6 +6,8 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
+    "build:vercel": "env USE_BASE_URL=/ docusaurus build",
+    "build:github": "env USE_BASE_URL=/physical-AI-Humanoid-Robotics docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

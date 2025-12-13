@@ -15,8 +15,8 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-    url: 'https://faizanmasood302.github.io',
-    baseUrl: '/physical-AI-Humanoid-Robotics',
+    url: process.env.DEPLOY_ENV === 'vercel' ? 'https://your-vercel-project.vercel.app' : 'https://faizanmasood302.github.io',
+    baseUrl: process.env.USE_BASE_URL || (process.env.DEPLOY_ENV === 'vercel' ? '/' : '/physical-AI-Humanoid-Robotics'),
     organizationName: 'faizanmasood302',
     projectName: 'physical-AI-Humanoid-Robotics',
 

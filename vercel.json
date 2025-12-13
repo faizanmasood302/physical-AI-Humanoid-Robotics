@@ -1,0 +1,26 @@
+{
+  "rootDirectory": "website",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build",
+        "buildCommand": "npm run build:vercel"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "github": {
+    "silent": true
+  },
+  "env": {
+    "DEPLOY_ENV": "vercel",
+    "USE_BASE_URL": "/"
+  }
+}
