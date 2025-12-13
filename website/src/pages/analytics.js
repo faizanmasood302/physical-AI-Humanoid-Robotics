@@ -1,3 +1,5 @@
+import React from 'react';
+
 // This file provides a placeholder for analytics integration
 // Actual analytics would be configured in docusaurus.config.js
 
@@ -14,5 +16,12 @@ export const trackPageView = (path) => {
   console.log('Page view tracked:', path);
 };
 
-// Export an empty object as default to avoid issues if not used
-export default {};
+// Export a React component as default
+export default function AnalyticsPage() {
+  return (
+    <div style={{ padding: '2rem' }}>
+      <h1>Analytics Dashboard</h1>
+      <p>Analytics functionality will be implemented here.</p>
+    </div>
+  );
+}
