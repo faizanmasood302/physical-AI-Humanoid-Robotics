@@ -6,8 +6,8 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "build:vercel": "env USE_BASE_URL=/ docusaurus build",
-    "build:github": "env USE_BASE_URL=/physical-AI-Humanoid-Robotics docusaurus build",
+    "build:vercel": "cross-env USE_BASE_URL=/ DEPLOY_ENV=vercel docusaurus build",
+    "build:github": "cross-env USE_BASE_URL=/physical-AI-Humanoid-Robotics docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -32,6 +32,7 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "cross-env": "^10.1.0",
     "typescript": "~5.6.2"
   },
   "browserslist": {
