@@ -40,7 +40,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/faizanmasood302/physical-AI-Humanoid-Robotics/edit/main/website/',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
           remarkPlugins: [
@@ -89,7 +89,7 @@ const config: Config = {
           label: 'Contents',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/faizanmasood302/physical-AI-Humanoid-Robotics',
           label: 'GitHub',
           position: 'right',
         },
@@ -137,7 +137,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/faizanmasood302/physical-AI-Humanoid-Robotics',
             },
           ],
         },
