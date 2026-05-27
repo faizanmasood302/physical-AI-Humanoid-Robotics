@@ -6,8 +6,10 @@ import { auth } from './auth';
 
 const app = new Hono();
 
+const origins = (process.env.CORS_ORIGINS || 'http://localhost:3000').split(',').map(s => s.trim());
+
 app.use('/api/auth/*', cors({
-  origin: ['http://localhost:3000'],
+  origin: origins,
   credentials: true,
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowHeaders: ['Content-Type', 'Authorization'],
@@ -15,5 +17,6 @@ app.use('/api/auth/*', cors({
 
 app.on(['POST', 'GET', 'OPTIONS'], '/api/auth/**', (c) => auth.handler(c.req.raw));
 
-serve({ fetch: app.fetch, port: 4000 });
-console.log('Auth server running on http://localhost:4000');
+const port = parseInt(process.env.PORT || '4000', 10);
+serve({ fetch: app.fetch, port });
+console.log(`Auth server running on http://localhost:${port}`);

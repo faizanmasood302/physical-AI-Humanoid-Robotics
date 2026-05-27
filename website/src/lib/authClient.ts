@@ -1,4 +1,8 @@
-const AUTH_URL = 'http://localhost:4000';
+let AUTH_URL = 'http://localhost:4000';
+
+export function setAuthUrl(url: string) {
+  AUTH_URL = url;
+}
 
 export interface AuthUser {
   id: string;

@@ -71,6 +71,7 @@ const config: Config = {
 
   customFields: {
     apiUrl: process.env.CHATBOT_API_URL || 'http://localhost:8000',
+    authUrl: process.env.AUTH_URL || 'http://localhost:4000',
   },
 
   themeConfig: {

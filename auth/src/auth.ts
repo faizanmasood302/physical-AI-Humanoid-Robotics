@@ -9,6 +9,6 @@ export const auth = betterAuth({
     enabled: true,
   },
   baseURL: `${process.env.BETTER_AUTH_URL || 'http://localhost:4000'}/api/auth`,
-  trustedOrigins: ['http://localhost:3000'],
+  trustedOrigins: (process.env.CORS_ORIGINS || 'http://localhost:3000').split(',').map(s => s.trim()),
   plugins: [bearer()],
 });
