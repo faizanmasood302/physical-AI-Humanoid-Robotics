@@ -1,7 +1,7 @@
 import { betterAuth } from 'better-auth';
 import { drizzleAdapter } from 'better-auth/adapters/drizzle';
 import { bearer } from 'better-auth/plugins/bearer';
-import { db } from './db.js';
+import { db } from './db';
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, { provider: 'pg', schema: db._.fullSchema }),
