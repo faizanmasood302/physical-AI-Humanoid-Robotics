@@ -1,5 +1,5 @@
 Link: https://physical-ai-humanoid-robotics-psi-five.vercel.app/
-uilding Physical AI & Humanoid Robotics — An Interactive RAG Textbook
+building Physical AI & Humanoid Robotics — An Interactive RAG Textbook
 Built a full-stack RAG chatbot for a Physical AI & Humanoid Robotics textbook with this stack:
 🧠 AI/ML
 - Groq (Llama 3.3 70B) — LLM for chat responses
