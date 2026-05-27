@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import { getSession, login as apiLogin, signup as apiSignup, logout as apiLogout, AuthUser } from './authClient';
 
 interface AuthContextType {
@@ -14,7 +15,9 @@ const AuthContext = createContext<AuthContextType>(null!);
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
-  const [token, setToken] = useState<string | null>(() => localStorage.getItem('auth_token'));
+  const [token, setToken] = useState<string | null>(() =>
+    ExecutionEnvironment.canUseDOM ? localStorage.getItem('auth_token') : null
+  );
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
