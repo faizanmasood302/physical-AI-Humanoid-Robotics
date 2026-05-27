@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { useAuth } from '@site/src/lib/AuthContext';
 
 export default function SignupPage() {
   const { signup } = useAuth();
+  const {siteConfig} = useDocusaurusContext();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -17,7 +19,7 @@ export default function SignupPage() {
     setLoading(true);
     try {
       await signup(email, password, name || undefined);
-      window.location.href = '/physical-AI-Humanoid-Robotics/';
+      window.location.href = siteConfig.baseUrl || '/';
     } catch (err: any) {
       setError(err.message);
     } finally {

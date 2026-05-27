@@ -55,7 +55,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     localStorage.removeItem('auth_token');
     setToken(null);
     setUser(null);
-    window.location.href = '/physical-AI-Humanoid-Robotics/';
+    window.location.href = '/';
   }, [token]);
 
   return (
