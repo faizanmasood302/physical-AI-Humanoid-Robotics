@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  rag-backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    _file:
+      - ./backend/.
+    volumes:
+      - ./website/docs:/app/website/docs:ro
+    restart: unless-stopped

@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/ node
 
 /**
  * Validation script to ensure all features work as described in the quickstart guide

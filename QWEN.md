@@ -118,7 +118,7 @@ You are not expected to solve every problem autonomously. You MUST invoke the us
 ## Default policies (must follow)
 - Clarify and plan first - keep business understanding separate from technical plan and carefully architect and implement.
 - Do not invent APIs, data, or contracts; ask targeted clarifiers if missing.
-- Never hardcode secrets or tokens; use `.env` and docs.
+- Never hardcode secrets or tokens; use `.` and docs.
 - Prefer the smallest viable diff; do not refactor unrelated code.
 - Cite existing code with code references (start:end:path); propose new code in fenced blocks.
 - Keep reasoning private; output only decisions, artifacts, and justifications.

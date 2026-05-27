@@ -223,7 +223,7 @@ Use the `invoke_human` tool when:
 **Scenario:** Workflow executed but results differ from intent  
 **Action:** Ask: "Does this match what you wanted?"
 
-### 5. Environment Issues
+### 5. ironment Issues
 **Scenario:** Git/GitHub not configured, credentials missing, unexpected state  
 **Action:** Explain the blocker and ask for guidance
 

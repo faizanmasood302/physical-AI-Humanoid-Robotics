@@ -132,3 +132,15 @@
 .alert--danger {
   border-left-color: var(--ifm-color-education-caution);
 }
+
+/* Chatbot global styles */
+:root {
+  --chatbot-z-index: 999;
+}
+
+/* Prevent chatbot from overlapping with page content on mobile */
+@media (max-width: 480px) {
+  .theme-doc-footer {
+    margin-bottom: 80px;
+  }
+}
