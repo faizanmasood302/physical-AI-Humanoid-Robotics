@@ -2,7 +2,7 @@ import 'dotenv/config';
 import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { serve } from '@hono/node-server';
-import { auth } from './auth';
+import { auth } from './auth.js';
 
 const app = new Hono();
 
