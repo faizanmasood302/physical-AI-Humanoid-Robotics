@@ -17,6 +17,6 @@ app.use('/api/auth/*', cors({
 
 app.on(['POST', 'GET', 'OPTIONS'], '/api/auth/**', (c) => auth.handler(c.req.raw));
 
-const port = parseInt(process.env.PORT || '4000', 10);
+const port = parseInt(process.env.PORT || '7860', 10);
 serve({ fetch: app.fetch, port });
 console.log(`Auth server running on http://localhost:${port}`);
